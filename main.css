@@ -1,0 +1,117 @@
+@font-face {
+    font-family: rodina;
+    src: url(Campton-LightDEMO.ttf);
+}
+
+body, footer{
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	background: #E9EBEE;
+}
+
+.header{
+	height: 42px;
+	width: 100%;
+	background: #4267B2;
+	display: flex;
+	align-items: center;
+}
+
+.logo{
+	background-image: url(https://www.facebook.com/rsrc.php/v3/yx/r/pzdnQfNKajS.png);
+    background-repeat: no-repeat;
+    background-position: 0 -171px;
+    height: 24px;
+    width: 24px;
+    position: relative;
+	margin-left: 66px;
+}
+
+.nav-bar{
+	width: 40%;
+	height: 100%;
+	color:white;
+	float: right;
+}
+
+.main{
+	padding-top: 40px;
+	width: 100%;
+	height: 100%;
+}
+
+.search-bar{
+}
+
+::placeholder {
+    opacity: 0.8;
+    margin-left: 14px;
+	font-size: 14px;
+}
+
+.search {
+	padding: 7px;
+	height: 10px;
+	border: none;
+	margin-left: 7px;
+	border-radius: 2px;
+	width: 386px;
+}
+
+.search-button{
+	float: right;
+	background: #F6F7F9;
+	font-size: 15px;
+	border: none;
+	width: 45px;
+	height: 24px;
+	color: #606875;
+	border-radius: 2px;
+}
+
+i{
+	margin-bottom: 4px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 9px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #3B5CA0;
+}
+
+.nav-bar{
+	font-size:12px;
+	display: flex;
+	align-items: center;
+}
+
+.profile-pic{
+	width: 24px;
+	height: 24px;
+	margin-right: -40px;
+	margin-left: 220px;
+	border-radius: 50%;
+}
+
+.nav-item{
+
+}
