@@ -7,22 +7,45 @@
 </head>
 <body>
 	<div class="header">
-		<div class="logo"></div><!--logo-->
-		<div class="search-bar">
-			<form action="">
-			  <input type="text" placeholder="Search" name="search" class="search">
-			  <button type="submit" class="search-button"><i class="fa fa-search"></i></button>
-			</form>
-		</div><!--search-bar-->
-		<div class="nav-bar">
-		    <a href="https://www.facebook.com/vache.katsadze"><img src="Vach.jpg" alt="Vache" class="profile-pic" ></a>
-			<ul>
-			  <li><b><a href="#vache" class="nav-item">Vache</a></b></li>
-			  <li><b><a href="#home" class="nav-item">Home</a></b></li>
-			</ul>
-		</div><!--nav-bar-->
+		<div class="container">
+			<div class="logo"></div><!--logo-->
+			<div class="search-bar">	
+				<form action="">
+				  <input type="text" placeholder="Search" name="search" class="search">
+				  <button type="submit" class="search-button"><i class="fa fa-search"></i></button>
+				</form>
+			</div><!--search-bar-->
+			<div class="nav-bar">
+				<ul>
+					<li>
+						<div class="nav-item">
+						  	<a href="https://www.facebook.com/vache.katsadze">
+						  		<img src="Vach.jpg" alt="Vache" class="profile-pic" >
+								<b>Vache</b>
+						  	</a>
+						</div>
+					</li>
+					<div class="line"> </div>
+					<li>
+						<div class="nav-item">
+						  	<a href="https://www.facebook.com/">
+								<b>Home</b>
+						  	</a>
+						</div>
+					</li>
+					<div class="notif-bar">
+						<a href=""><div class="notif-item friends"></div></a>
+						<a href=""><div class="notif-item messages"></div></a>
+						<a href=""><div class="notif-item notifications"></div></a>
+					</div>
+					<div class="line"></div>
+					<a href=""><div class="notif-item info"></div></a>
+					<a href=""><div class="notif-item more"></div></a>
 
+				</ul>
+			</div><!--nav-bar-->
 
+		</div><!--container-->
 	</div><!--header-->
 
 	<div class="main">

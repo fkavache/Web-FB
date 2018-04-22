@@ -13,12 +13,23 @@ body{
 	background: #E9EBEE;
 }
 
-.header{
-	height: 42px;
-	width: 100%;
-	background: #4267B2;
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+.container{
+	width: 1234px;
+	margin:0 auto;
 	display: flex;
 	align-items: center;
+	height: 42px;
+	padding-right: 205px;
+
+}
+
+.header{
+	width: 100%;
+	background: #4267B2;
 }
 
 .logo{
@@ -28,11 +39,9 @@ body{
     height: 24px;
     width: 24px;
     position: relative;
-	margin-left: 66px;
 }
 
 .nav-bar{
-	width: 40%;
 	height: 100%;
 	color:white;
 	float: right;
@@ -55,11 +64,11 @@ body{
 
 .search {
 	padding: 7px;
-	height: 10px;
+	height: 24px;
 	border: none;
 	margin-left: 7px;
 	border-radius: 2px;
-	width: 386px;
+	width: 401px;
 }
 
 .search-button{
@@ -67,10 +76,11 @@ body{
 	background: #F6F7F9;
 	font-size: 15px;
 	border: none;
-	width: 45px;
+	width: 48px;
 	height: 24px;
 	color: #606875;
 	border-radius: 2px;
+	margin-left: -3px;
 }
 
 i{
@@ -80,6 +90,8 @@ i{
 ul {
     list-style-type: none;
     margin: 0;
+    display: flex;
+    align-items: center;
 }
 
 li {
@@ -90,11 +102,12 @@ li a {
     display: block;
     color: white;
     text-align: center;
-    padding: 9px;
     text-decoration: none;
+	display: inline-block;
+
 }
 
-li a:hover {
+li .nav-item:hover {
     background-color: #3B5CA0;
 }
 
@@ -102,16 +115,78 @@ li a:hover {
 	font-size:12px;
 	display: flex;
 	align-items: center;
+	padding-left: 170px;
+
 }
 
 .profile-pic{
 	width: 24px;
 	height: 24px;
-	margin-right: -40px;
-	margin-left: 220px;
 	border-radius: 50%;
+	margin-left: -8px;
 }
 
 .nav-item{
+	padding: 0 9px 1px;
+	height: 30px;
+	display: flex;
+	align-items: center;
 
+}
+
+.nav-item a * {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 1px;
+}
+
+.line{	
+    content: '';
+    height: 18px;
+    top: 12px;
+    width: 1px;
+    background: #3B5CA0;
+}
+
+.notif-bar{
+	padding: 0 6px 0 22px;
+}
+
+.notif-item{
+	width: 25px;
+	height: 25px;
+	background-repeat: no-repeat;
+    background-size: auto;
+    opacity: .6;
+    float: left;
+    margin-right: 8px;
+}
+
+.notif-item.friends{
+	background-image: url(https://www.facebook.com/rsrc.php/v3/yw/r/HrH-7nX4RPy.png);
+	background-position: 0 -275px;
+}
+
+.notif-item.messages{
+	background-image: url(https://www.facebook.com/rsrc.php/v3/yx/r/pzdnQfNKajS.png);
+	background-position: 0 -246px;
+}
+
+.notif-item.notifications{
+    background-image: url(https://www.facebook.com/rsrc.php/v3/yw/r/HrH-7nX4RPy.png);
+	background-position: 0 -425px;
+}
+
+.notif-item.info{
+	background-image: url(https://www.facebook.com/rsrc.php/v3/yv/r/f6VozFvfWEj.png);
+    background-position: 0 -1063px;
+    height: 20px;
+    margin-left: 13px;
+}
+
+.notif-item.more{
+    background-image: url(https://www.facebook.com/rsrc.php/v3/yv/r/f6VozFvfWEj.png);
+    background-position: 0 -1190px;
+    height: 16px;
+    width: 16px;
 }
