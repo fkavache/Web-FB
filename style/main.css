@@ -199,7 +199,7 @@ li .nav-item:hover {
 .main{
 	width: 100%;
 	height: 100%;
-	padding-top: 12px;
+	padding-top: 13px;
 }
 
 .main .container{
@@ -553,4 +553,142 @@ li .sb-item:hover {
 
 .like-comment-share{
 	padding: 7px 10px;
+}
+
+
+/*------------------------------------------------------------*/
+
+/*--------------------------ADS-BAR---------------------------*/
+
+.ads-bar{
+	padding: 0 0 10px 10px;
+}
+
+.stories-header{
+	height: 30px;
+}
+
+.stories-body{
+	height: 100%;
+
+}
+
+.stories-avatar{
+	width: 55px;
+	height: 55px;
+}
+
+.st-item{
+	width: 308px;
+	background: white;
+	padding: 16px 9px 15px 9px;
+	display: flex;
+	align-items: center;
+}
+
+.story{
+	padding: 10px 9px 0 20px;
+}
+
+.stories-text{
+	font-size: 13px;
+	padding: 8px 5px 2px 5px;
+}
+
+.stories-footer{
+	height: 35px;
+}
+
+.events{
+	width: 308px;
+	height: 40px;
+	background: white;
+	margin-top: 15px;
+	padding: 11px 9px 9px 9px;
+}
+
+.events-icon{
+	background-image: url(https://static.xx.fbcdn.net/rsrc.php/v3/yF/r/R2LFtgvx3q-.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-position: 0 -156px;
+    float: left;
+}
+
+.events-text{
+	font-size: 13px;
+}
+
+.sport-info-header{
+	width: 308px;
+	height: 40px;
+	background: white;
+	margin-top: 15px; 
+	padding: 11px 9px 9px 9px;
+}
+
+.sport-info-text{
+	color: #4B4F56;
+	font-size: 13px;
+}
+
+.sport-info-body{
+	text-align: center;
+	width: 308px;
+	height: 120px;
+	background: white;
+}
+
+.game-info{
+	display: inline-block;
+	width: 140px;
+	height: 100px;
+	border: 1px solid #dddfe2;
+	border-radius: 5px;
+	margin: 7px 7px 7px 1px;
+}
+
+.first{
+	margin: 7px 1px 7px 7px;
+}
+
+.club{
+	padding: 7px 0 0 7px;
+	clear: both;
+	height: 35px
+}
+
+.club-second{
+	padding: 0 0 7px 7px;
+}
+
+.club-icon{
+	width: 24px;
+	height: 24px;
+	float: left;
+}
+
+.club-name, .club-score{
+	font-size: 12px;
+	margin-top: 2px;
+}
+
+.club-score{
+	font-weight: normal;
+	float: right;
+}
+
+.game-state{
+	border-top: 1px solid #dddfe2;
+	margin: 0 5px;
+	padding: 5px;
+}
+
+.state-text{
+	font-size: 12px;
+	color: #868A91;
+	float: right;
 }
