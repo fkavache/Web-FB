@@ -251,7 +251,9 @@ li .sb-item:hover {
 
 .shortcut-bar{
 	padding-top: 11px;
-	left: -4px;
+	margin-left: -4px;
+	position: fixed;
+
 }
 
 .sb-text{
@@ -305,6 +307,9 @@ li .sb-item:hover {
 
 /*-------------------------NEWS-FEED--------------------------*/
 
+.news-feed{
+	margin-left:180px;
+}
 
 .make-post{
 	padding: 0 0 10px 10px;
@@ -562,6 +567,8 @@ li .sb-item:hover {
 
 .ads-bar{
 	padding: 0 0 10px 10px;
+	position: fixed;
+	margin-left: 690px;
 }
 
 .stories-header{
@@ -576,7 +583,10 @@ li .sb-item:hover {
 .stories-avatar{
 	width: 55px;
 	height: 55px;
+	padding: 2px;
+    border: 2px solid #4080FF;
 }
+
 
 .st-item{
 	width: 308px;
@@ -691,4 +701,57 @@ li .sb-item:hover {
 	font-size: 12px;
 	color: #868A91;
 	float: right;
+}
+
+.game-info:hover{
+	background: #F6F6F7;
+}
+
+
+/*------------------------------------------------------------*/
+
+/*--------------------------ADS-BAR---------------------------*/
+
+.friends-bar{
+	border-left: 1px solid #CCCCCC;
+	width: 205px;
+	height: 100%;
+	position: fixed;
+	top: 42px;
+	right: 0;
+	background: #E9EBEE;
+}
+
+.friend{
+	padding: 4px 0;
+	padding-left: 5px;
+	display: flex;
+	align-items: center;
+}
+
+
+.friend:hover{
+	background: #DDDFE2;
+}
+
+.fr-bar-avatar{
+	margin: 0;
+	width: 35px;
+	height: 35px;
+	float: left;
+}
+
+.fr-bar-text{
+	font-size: 12px;
+	float: left;
+	margin-left: 10px;
+}
+
+.fr-bar-active{
+	width: 6px;
+	height: 6px;
+	margin-left: auto;
+	margin-right: 5px; 
+	border-radius: 50%;
+	background: #42B72A;
 }
