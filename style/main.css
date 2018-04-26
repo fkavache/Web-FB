@@ -707,10 +707,43 @@ li .sb-item:hover {
 	background: #F6F6F7;
 }
 
+.language{
+	width: 308px;
+	height: 60px;
+	background: white;
+	margin-top: 15px; 
+	padding: 8px;
+	display: flex;
+	align-items: center;
+}
+
+.language-text{
+	font-size: 13px;
+	color: #536FA6;
+	width: 90%;
+}
+
+.selected-language{
+	color: #9A9EA5;
+	display: inline-block;
+}
+
+.language-plus{
+	width: 34px;
+	height: 28px;
+	border: 1px solid;
+    font-size: 20px;
+    text-align: center;
+    background-color: #f6f7f9;
+    border-color: #ced0d4;
+    color: #4b4f56;
+    padding-top: 1px;
+    margin-right: 4px;
+}
 
 /*------------------------------------------------------------*/
 
-/*--------------------------ADS-BAR---------------------------*/
+/*--------------------------CONV-BAR--------------------------*/
 
 .friends-bar{
 	border-left: 1px solid #CCCCCC;
@@ -755,3 +788,4 @@ li .sb-item:hover {
 	border-radius: 50%;
 	background: #42B72A;
 }
+
