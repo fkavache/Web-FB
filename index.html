@@ -192,7 +192,7 @@
 					<div class="mkp-body">
 						<div class="mkp-body-container">
 							<img src="img/Vach.jpg" alt="Vache" class="profile-pic mkp-avatar" >
-		  					<textarea class="make-post-textarea" placeholder="What's on your mind, Vache?"></textarea> 
+		  					<textarea class="make-post-textarea" placeholder="What's on your mind, Vache?" onfocus="postOverlay()"></textarea> 
 		  				</div>
 					</div>
 					<div class="mkp-footer">
@@ -215,90 +215,29 @@
 					<div class="post-header">
 						<div class="post-header-container">
 							<a href="">
-								<img src="img/MKBHD.png" alt="mkbhd" class="profile-pic post-avatar" >
+								<img src="" alt="mkbhd" class="profile-pic post-avatar" >
 								<div class="post-author">
-									MKBHD
-									<div class="post-mini-text">17 mins ·</div>
+									<div class="post-author-text"></div>
+									<div class="post-mini-text">123</div>
 								</div>
 							</a>
 						</div> 
 					</div>
 					<div class="post-body">
 						<div class="post-body-text">
-							<div>NEW VIDEO - Huawei P20 Pro Review: The Triple Camera Smartphone!</div>
-							<a href="https://youtu.be/TQG7m1BFeRc">https://youtu.be/TQG7m1BFeRc</a>
 						</div>
 						<div class="post-body-img">
-							<img src="img/p20.jpg" alt="p20" class="post-img" >
+							<img src="" alt="" class="post-img" >
 						</div>
 					</div>
 					<div class="post-footer">
 						 <div class="num-emotions">
 							<div class="num-comments post-mini-text">
-								15 Comments &nbsp; 2 Shares
  							</div>	
 						 	<div class="emotions like"></div>
 						 	<div class="emotions love"></div>
 						 	<div class="emotions haha"></div>
-						 	<div class="post-mini-text  emotions-text">33</div>
-						 </div>
-						 <div class="like-comment-share">
-						 	<div class="post-like">
-						 		<a href="">
-							 		<div class="plcs-container">
-								 		<div class="plcs-icon plcs-like"></div>
-								 		<div class="post-mini-text plcs-text">Like</div>
-							 		</div>
-							 	</a>
-						 	</div>
-						 	<div class="post-comment">
-						 		<a href="">
-						 			<div class="plcs-container">
-							 			<div class="plcs-icon plcs-comment"></div>
-								 		<div class="post-mini-text plcs-text">Comment</div>
-								 	</div>
-							 	</a>
-						 	</div>
-						 	<div class="post-share">
-						 		<a href="">
-						 			<div class="plcs-container">
-							 			<div class="plcs-icon plcs-share"></div>
-								 		<div class="post-mini-text plcs-text">Share</div>
-								 	</div>
-							 	</a>
-						 	</div>
-						 </div>
-					</div>
-				</div><!-- post -->
-					<div class="post">
-					<div class="post-header">
-						<div class="post-header-container">
-							<a href="">
-								<img src="img/9gag.png" alt="mkbhd" class="profile-pic post-avatar" >
-								<div class="post-author">
-									9GAG
-									<div class="post-mini-text">40 mins ·</div>
-								</div>
-							</a>
-						</div> 
-					</div>
-					<div class="post-body">
-						<div class="post-body-text">
-							<div>Bromance goal.<br/>By Joe Heenan | TW</div>
-						</div>
-						<div class="post-body-img">
-							<img src="img/9gag-post.jpg" alt="p20" class="post-img" >
-						</div>
-					</div>
-					<div class="post-footer">
-						 <div class="num-emotions">
-							<div class="num-comments post-mini-text">
-								1K Comments &nbsp; 523 Shares
- 							</div>	
-						 	<div class="emotions like"></div>
-						 	<div class="emotions love"></div>
-						 	<div class="emotions haha"></div>
-						 	<div class="post-mini-text  emotions-text">670</div>
+						 	<div class="post-mini-text  emotions-text"></div>
 						 </div>
 						 <div class="like-comment-share">
 						 	<div class="post-like">
@@ -407,9 +346,6 @@
 						+
 					</div>
 				</div><!-- language -->
-				<div class="rights">
-					
-				</div>
 			</div><!--ads-bar-->
 		</div><!-- container -->
 		<div class="friends-bar">
@@ -418,8 +354,17 @@
 				<div class="fr-bar-text"></div>
 				<div class="fr-bar-active"></div>
 			</div>
+			<div class="frineds-bar-search">
+				<div class="frb-search-icon srch"></div>
+				<input type="text" placeholder="Search" name="search" class="frb-search" autocomplete="off">
+				<div class="frb-search-icon opti fbr-search-option"></div>
+				<div class="frb-search-icon newm fbr-search-option"></div>
+				<div class="frb-search-icon newg fbr-search-option"></div>
+			</div>
 		</div>
 	</div><!--main-->
+	<div class="post-overlay"></div>
+	<script type="text/javascript" src="scripts/data.js"></script>
 	<script type="text/javascript" src="scripts/script.js"></script>
 </body>
 </html>

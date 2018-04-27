@@ -38,7 +38,7 @@ body{
 	border-bottom: 1px solid #29487D;
 	position: fixed;
 	top: 0;
-	z-index: 999;
+	z-index: 989;
 }
 
 .logo{
@@ -251,7 +251,7 @@ li .sb-item:hover {
 
 .shortcut-bar{
 	padding-top: 11px;
-	margin-left: -4px;
+	margin-left: -2px;
 	position: fixed;
 
 }
@@ -308,20 +308,21 @@ li .sb-item:hover {
 /*-------------------------NEWS-FEED--------------------------*/
 
 .news-feed{
-	margin-left:180px;
+	margin-left:185px;
 }
 
 .make-post{
-	padding: 0 0 10px 10px;
+	padding: 0 0 11px 11px;
+	z-index: 988;
+	position: relative;
 }
 
 .mkp-header{
 	width: 500px;
 	height: 33px;
 	background: #F6F7F9;
-	background: #F6F7F9;
 	border-bottom: 1px solid #dddfe2;
-	border-radius: 3px 2px 0 0;
+	border-radius: 3px 3px 0 0;
 	display:flex;
 	align-items: center;
 }
@@ -342,6 +343,7 @@ li .sb-item:hover {
 	width: 500px;
 	height: 49px;
 	background: #FFFFFF;
+	border-radius: 0 0 3px 3px ;
 }
 
 .mkp-header-icon{
@@ -377,6 +379,7 @@ li .sb-item:hover {
 .mkp-avatar, .post-avatar{
 	height: 40px;
 	width: 40px;
+	margin-bottom: 5px; 
 }
 
 .make-post-textarea{
@@ -424,6 +427,7 @@ li .sb-item:hover {
 }
 
 .post-header, .post-body{
+	border-radius: 3px 3px 0 0;
 	width: 500px;
 	height: 70px;
 	background: #FFFFFF;
@@ -484,6 +488,7 @@ li .sb-item:hover {
 	width: 500px;
 	height: 80px;
 	background: white;
+	border-radius: 0 0 3px 3px;
 }
 
 .emotions{
@@ -560,6 +565,17 @@ li .sb-item:hover {
 	padding: 7px 10px;
 }
 
+.post-overlay{
+	width: 100%;
+	height: 100%;
+	background: black;
+	z-index: 991;
+	position: fixed;
+	left: 0;
+	top: 0;
+	opacity: 0.6;
+	display: none;
+}
 
 /*------------------------------------------------------------*/
 
@@ -568,11 +584,12 @@ li .sb-item:hover {
 .ads-bar{
 	padding: 0 0 10px 10px;
 	position: fixed;
-	margin-left: 690px;
+	margin-left: 695px;
 }
 
 .stories-header{
 	height: 30px;
+	border-radius: 3px 3px 0 0;
 }
 
 .stories-body{
@@ -607,6 +624,7 @@ li .sb-item:hover {
 
 .stories-footer{
 	height: 35px;
+	border-radius: 0 0 3px 3px;
 }
 
 .events{
@@ -784,8 +802,49 @@ li .sb-item:hover {
 	width: 6px;
 	height: 6px;
 	margin-left: auto;
-	margin-right: 5px; 
+	margin-right: 15px; 
 	border-radius: 50%;
 	background: #42B72A;
 }
 
+.frineds-bar-search{
+	width: 100%;
+	height: 35px;
+	background: #F6F7F9;
+	position: absolute;
+	bottom: 40px;
+	display: flex;
+	align-items: center;
+}
+
+.frb-search{
+	padding: 0px;
+	height: 15px;
+	border: none;
+	border-radius: 2px;
+	width: 80px;
+	outline: none;
+	background: #F6F7F9;
+	margin-left: 20px;
+}
+
+.frb-search-icon{
+	background-image: url(https://www.facebook.com/rsrc.php/v3/yR/r/FCR3VwJhhnC.png);
+    background-repeat: no-repeat;
+    height: 12px;
+    left: 8px;
+    bottom: 1px;
+    position: relative;
+    width: 12px;
+}
+
+.srch{background-position: -34px -350px;}
+.opti{background-position: 0 -329px;}
+.newm{background-position: -27px -220px;}
+.newg{background-position: 0 -295px;}
+
+.fbr-search-option{
+	width: 16px;
+	height: 16px;
+	margin: 0 5px 0 5px;
+}
