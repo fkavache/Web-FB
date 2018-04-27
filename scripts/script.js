@@ -27,7 +27,6 @@ post.querySelector('.post-mini-text').innerHTML = posts[0].time;
 function postsList(){
 	posts.forEach(function(elem, idx){
 		if(idx == 0) return;
-		console.log(elem);
 		var clnNode = post.cloneNode(true);
 		clnNode.querySelector('.post-author-text').innerHTML = elem.author;
 		clnNode.querySelector('.post-avatar').src = elem.avatar;
@@ -44,18 +43,42 @@ function postOverlay(){
 	document.getElementsByClassName('post-overlay')[0].style.display = 'block';
 	document.getElementsByClassName('make-post')[0].style.zIndex  = '992';
 	document.getElementsByClassName('mkp-body')[0].style.height = '200px'
+	document.getElementsByClassName('post-button')[0].style.display = 'block';
 }
 
-function postOverlayRemove(){
+function postOverlayEvent(){
 	var overlay = document.getElementsByClassName('post-overlay')[0];
 	overlay.style.cursor = 'pointer';
 	overlay.onclick = function() {
-	    overlay.style.display = "none";
-		document.getElementsByClassName('mkp-body')[0].style.height = '71px'
-		document.getElementsByClassName('make-post')[0].style.zIndex  = '988';
+	   postOverlayRemove(overlay);
 	};
+}
+
+function postOverlayRemove(overlay){
+	overlay.style.display = "none";
+	document.getElementsByClassName('mkp-body')[0].style.height = '71px'
+	document.getElementsByClassName('make-post')[0].style.zIndex  = '988';
+	document.getElementsByClassName('post-button')[0].style.display = 'none';
+}
+
+
+function makePost() {
+	var postText = document.getElementsByClassName("make-post-textarea")[0].value; 
+	document.getElementsByClassName("make-post-textarea")[0].value = ""; 
+	var clnNode = post.cloneNode(true);
+	clnNode.querySelector('.post-author-text').innerHTML = user.name;
+	clnNode.querySelector('.post-avatar').src = user.avatar;
+	clnNode.querySelector('.post-img').src = '';
+	clnNode.querySelector('.emotions-text').innerHTML = "1";
+	clnNode.querySelector('.num-comments').innerHTML = "1 Comment";
+	clnNode.querySelector('.post-body-text').innerHTML = postText;
+	clnNode.querySelector('.post-mini-text').innerHTML = "1 mins";
+	newsFeed.insertBefore(clnNode, newsFeed.childNodes[2]);
+	var overlay = document.getElementsByClassName('post-overlay')[0];
+	overlay.style.cursor = 'pointer';
+	postOverlayRemove(overlay);
 }
 
 friendsList();
 postsList();
-postOverlayRemove();	
+postOverlayEvent();	

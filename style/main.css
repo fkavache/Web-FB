@@ -415,6 +415,21 @@ li .sb-item:hover {
     padding: 7px;
 }
 
+.post-button{
+	float: right;
+	background: #4367b1;
+	font-size: 13px;
+	font-weight: bold;
+	border: none;
+	width: 60px;
+	height: 25px;
+	color: white;
+	border-radius: 2px;
+	outline: none;
+	margin-top: 3px;
+	display: none;
+}
+
 .mkp-footer{
 }
 

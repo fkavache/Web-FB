@@ -101,3 +101,8 @@ var posts = [
 		time: "Yesterday at 7:14am ·",
  	},
  ]
+
+ var user = {
+ 	name : "Vache Katsadze",
+ 	avatar : "https://scontent.ftbs5-1.fna.fbcdn.net/v/t1.0-1/p160x160/30708123_1567262690039618_4597674946049605632_n.jpg?_nc_cat=0&oh=055edbdf21e676111e2760df229f3577&oe=5B510EAC" 
+ }
