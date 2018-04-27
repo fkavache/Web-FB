@@ -83,7 +83,7 @@ function makePost() {
 
 function filterFriends(){
 	var searched = document.getElementsByClassName("frb-search")[0].value;
-	var filteredData = friends.filter(fr => fr.name.includes(searched));
+	var filteredData = friends.filter(fr => fr.name.toLowerCase().includes(searched.toLowerCase()));
 
 	var k = 0;
 	var length = frinedsBar.childNodes.length;
