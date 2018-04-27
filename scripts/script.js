@@ -1,16 +1,16 @@
 
-var each = document.querySelector('.friends-bar');
-var friend = each.querySelector('.friend');
+var frinedsBar = document.querySelector('.friends-bar');
+var friend = frinedsBar.querySelector('.friend');
 friend.querySelector('.fr-bar-text').innerHTML = friends[0].name;
 friend.querySelector('.fr-bar-avatar').src = friends[0].img;
 
-function friendsList(){
-	friends.forEach(function(elem, idx){
-		if(idx == 0) return;
+function friendsList(data, x){
+	data.forEach(function(elem, idx){
+		if(idx == x) return;
 		var clnNode = friend.cloneNode(true);
 		clnNode.querySelector('.fr-bar-text').innerHTML = elem.name;
 		clnNode.querySelector('.fr-bar-avatar').src = elem.img;
-		each.appendChild(clnNode);
+		frinedsBar.appendChild(clnNode);
 	})
 }
 
@@ -44,6 +44,7 @@ function postOverlay(){
 	document.getElementsByClassName('make-post')[0].style.zIndex  = '992';
 	document.getElementsByClassName('mkp-body')[0].style.height = '200px'
 	document.getElementsByClassName('post-button')[0].style.display = 'block';
+	document.getElementsByClassName('make-post-textarea')[0].style.fontSize = '25px';
 }
 
 function postOverlayEvent(){
@@ -59,6 +60,7 @@ function postOverlayRemove(overlay){
 	document.getElementsByClassName('mkp-body')[0].style.height = '71px'
 	document.getElementsByClassName('make-post')[0].style.zIndex  = '988';
 	document.getElementsByClassName('post-button')[0].style.display = 'none';
+	document.getElementsByClassName('make-post-textarea')[0].style.fontSize = '13px';
 }
 
 
@@ -79,6 +81,25 @@ function makePost() {
 	postOverlayRemove(overlay);
 }
 
-friendsList();
+function filterFriends(){
+	var searched = document.getElementsByClassName("frb-search")[0].value;
+	var filteredData = friends.filter(fr => fr.name.includes(searched));
+
+	var k = 0;
+	var length = frinedsBar.childNodes.length;
+	for(i=0; i<100; i++){
+		var child = frinedsBar.childNodes[i];
+
+		if(child != null){
+			if(child.className === "friend"){
+				child.remove();
+				i--;
+			}
+		}
+	}
+	friendsList(filteredData, -1);
+}
+
+friendsList(friends, 0);
 postsList();
 postOverlayEvent();	
