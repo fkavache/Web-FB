@@ -58,9 +58,23 @@ function postOverlayEvent(){
 function postOverlayRemove(overlay){
 	overlay.style.display = "none";
 	document.getElementsByClassName('mkp-body')[0].style.height = '71px'
-	document.getElementsByClassName('make-post')[0].style.zIndex  = '988';
+	document.getElementsByClassName('make-post')[0].style.zIndex  = '0';
 	document.getElementsByClassName('post-button')[0].style.display = 'none';
 	document.getElementsByClassName('make-post-textarea')[0].style.fontSize = '13px';
+}
+
+function searchOverlay(){
+	document.getElementsByClassName('recent-searches')[0].style.display = 'block';
+	document.getElementsByClassName('search-overlay')[0].style.zIndex  = '0';
+}
+
+function searchOverlayEvent(){
+	var overlay = document.getElementsByClassName('search-overlay')[0];
+	overlay.style.cursor = 'pointer';
+	overlay.onclick = function() {
+	 	document.getElementsByClassName('recent-searches')[0].style.display = 'none';
+	 	document.getElementsByClassName('search-overlay')[0].style.zIndex  = '-1';
+	};
 }
 
 
@@ -103,3 +117,4 @@ function filterFriends(){
 friendsList(friends, 0);
 postsList();
 postOverlayEvent();	
+searchOverlayEvent();

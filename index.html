@@ -11,9 +11,15 @@
 			<div class="logo"></div><!--logo-->
 			<div class="search-bar">	
 				<form action="">
-				  <input type="text" placeholder="Search" name="search" class="search">
+				  <input type="text" placeholder="Search" name="search" class="search"  autocomplete="off" onfocus="searchOverlay()">
 				  <button type="submit" class="search-button"><i class="fa fa-search"></i></button>
 				</form>
+				<div class="recent-searches">
+					<div class="rs-header">
+						<div class="rs-text">RECENT SEARCHES</div>
+						<div class="rs-text edit">EDIT</div>
+					</div>
+				</div>
 			</div><!--search-bar-->
 			<div class="nav-bar">
 				<ul>
@@ -365,6 +371,7 @@
 		</div>
 	</div><!--main-->
 	<div class="post-overlay"></div>
+	<div class="search-overlay"></div>
 	<script type="text/javascript" src="scripts/data.js"></script>
 	<script type="text/javascript" src="scripts/script.js"></script>
 </body>
